@@ -28,6 +28,7 @@ namespace FoodBankInventoryManager
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             L2S_FoodBankDBDataContext dbContext = new L2S_FoodBankDBDataContext();
+            
         }
     }
 }
