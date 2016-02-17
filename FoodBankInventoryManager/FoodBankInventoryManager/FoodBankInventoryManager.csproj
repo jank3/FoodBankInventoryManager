@@ -80,6 +80,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>L2S_FoodBankDB.dbml</DependentUpon>
     </Compile>
+    <Compile Include="ScannerEmulator.xaml.cs">
+      <DependentUpon>ScannerEmulator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ScannerEmulatorDelete.xaml.cs">
+      <DependentUpon>ScannerEmulatorDelete.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StatisticsPage.xaml.cs">
       <DependentUpon>StatisticsPage.xaml</DependentUpon>
     </Compile>
@@ -123,6 +129,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ScannerEmulator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ScannerEmulatorDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StatisticsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -165,7 +179,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fbm logo.png" />
