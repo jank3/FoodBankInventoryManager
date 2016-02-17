@@ -216,7 +216,7 @@
                     Margin="0,0,0,10" 
                     Grid.RowSpan="2" 
                     VerticalAlignment="Bottom" 
-                    Style="{DynamicResource ButtonStyle}">Back to Home</Button>
+                    Style="{DynamicResource ButtonStyle}" Click="Button_Click">Back to Home</Button>
         </Grid>
     </Grid>
 </Page>

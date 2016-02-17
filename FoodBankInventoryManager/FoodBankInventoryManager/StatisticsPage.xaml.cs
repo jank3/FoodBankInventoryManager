@@ -30,5 +30,21 @@ namespace FoodBankInventoryManager
             L2S_FoodBankDBDataContext dbContext = new L2S_FoodBankDBDataContext();
             
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (LoginPage.isAnAdministrator==true)
+            {
+                HomePage h = new HomePage(true);
+                LoginPage.isAnAdministrator = true;
+                this.NavigationService.Navigate(h);
+            }
+            else
+            {
+                HomePage h = new HomePage(false);
+                LoginPage.isAnAdministrator = false;
+                this.NavigationService.Navigate(h);
+            }
+        }
     }
 }
