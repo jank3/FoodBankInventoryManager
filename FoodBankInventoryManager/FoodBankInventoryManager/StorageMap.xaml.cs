@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace FoodBankInventoryManager
 {
     /// <summary>
-    /// Interaction logic for WithdrawalPage.xaml
+    /// Interaction logic for StorageMap.xaml
     /// </summary>
-    public partial class WithdrawalPage : Page
+    public partial class StorageMap : Page
     {
-        public WithdrawalPage()
+        public StorageMap()
         {
             InitializeComponent();
-        }
-
-        private void btnRemoveAll_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Are you sure you want to remove ALL items in the current bin?", "Food Bank Manager", MessageBoxButton.YesNo);
         }
     }
 }
